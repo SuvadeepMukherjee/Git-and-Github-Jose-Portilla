@@ -38,10 +38,8 @@
 - git status
   
   - This command will report back the status of our git repository 
-  
-  
 
--  Cloning a public github repository created online
+- Cloning a public github repository created online
   
   - `git clone https://github.com/SuvadeepMukherjee/my-second-repo.git`
 
@@ -55,6 +53,4 @@
 
                 for example 
 
-                `
-
-`git clone https://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@github.com/SuvadeepMukherjee/private-repo.git``
+                       ![](../assets/git-clone-private.png) 
