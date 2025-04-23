@@ -51,6 +51,6 @@
 
                `git clone https//token@github.com/account/repo.hit`
 
-                for example 
+               
 
-                       ![](../assets/git-clone-private.png) 
+                      
