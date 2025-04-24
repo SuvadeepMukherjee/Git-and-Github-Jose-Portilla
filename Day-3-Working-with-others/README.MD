@@ -18,15 +18,11 @@ Upon creating a new repo with `git init` we create a new branch called the maste
 
 This is a Branch just like any other but its simply the first one created 
 
-
-
 ##### Master vs Main
 
 Github has changed the nomenclature for this initial branch to be main branch while Git is still using master branch 
 
 We can also rename any branch 
-
-
 
 #### Branches and Commits
 
@@ -35,8 +31,6 @@ Git stores a branch as a reference to a commit
 In this sense , a branch represents the tip of a series of commits -its not a container for commits 
 
 The history for a branch is extrapolated through the commit relationships 
-
-
 
 #### Head
 
@@ -47,3 +41,23 @@ we can think of Head as pointing to a specific commit in a branch that we are cu
 using HEAD tells us which branch reference we are currently "checking out"
 
 we can always switch back out head to some other branch(which is a pointer to a commit reference)
+
+`git branch` => Reports back the branches we have 
+
+`git branch new_branch` => Creates a new branch called new_branch 
+
+`git switch new_branch`  => Switches  to new_branch
+
+#### Renaming a branch
+
+`git switch branch_to_rename`
+
+`git branch -m new_name`
+
+Note => We must be checked out on the branch we will rename 
+
+#### Deleting a Branch
+
+`git branch -d branch_to_delete_name` 
+
+Note => We can not delete a branch we are checked out at , We also will get a warning if the branch is not merged .We can confirm we want to do this anyways with -D 
