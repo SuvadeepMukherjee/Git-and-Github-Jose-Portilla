@@ -81,3 +81,11 @@ However there will be instances where there will be conflicts for example change
 Switch to master 
 
 `git merge new-branch`
+
+#### Git diff
+
+When working with multiple branches or file versions , it is useful to have a tool that can display the differences between versions 
+
+git diff is a powerful tool that can show the differences between data sets 
+
+Syntax : `git diff` or `git diff file_name.txt`
