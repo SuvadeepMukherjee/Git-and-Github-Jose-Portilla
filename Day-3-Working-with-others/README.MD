@@ -61,3 +61,23 @@ Note => We must be checked out on the branch we will rename
 `git branch -d branch_to_delete_name` 
 
 Note => We can not delete a branch we are checked out at , We also will get a warning if the branch is not merged .We can confirm we want to do this anyways with -D 
+
+#### Fast-Forward Merge
+
+A new branch is created but the original branch it stemmed from has no additional commits 
+
+#### Merge with no conflicts
+
+There can be no conflicts for example the branch only focussed on files not in the receiving branch , thus the merge simply adds the nw files to the receiving branch
+
+Git will created a commit for you ,It will also request for you to name the commit with a default name of "Merge branch branch_name"
+
+#### Merge with conflicts
+
+However there will be instances where there will be conflicts for example changes in the file on lines that are different between the branches .These are known as merge conflicts and we need to resolve(fix) the conflicts between the branches in order to merge them 
+
+#### How to merge ?
+
+Switch to master 
+
+`git merge new-branch`
