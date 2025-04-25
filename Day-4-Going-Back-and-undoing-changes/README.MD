@@ -42,4 +42,30 @@
 
 - After we have seen this commit history we can go back to a particular branch by doing `git checkout master` if we want to go to master branch 
 
+#### git restore
+
+- we can restore a file to its state at the previous most recent commit using the `git restore` command : `git restore fileName`
+
+- We can not undo a git restore command since our changes were not committed 
+
+- Think of this command as an ultimate "Cltr+z" restoring files to their previous commit 
+
+- Typically speaking git restore will restore the file back to the HEAD which typically we have pointing to the most recent commit in the branch 
+
+- This actually gives us even more flexibility in our restore procedure , we can restore a file to any commit in the log 
+
+- we state the Number of commits from the HEAD to go back to 
+  
+  - `git restore --source HEAD~N file.txt`
+  
+  - example `git restore --source HEAD~2 myFile.txt`
+
+- Finally git restore allows us to unstage files that we had already added to the staging area using git add 
+
+- We can do this with 
+  
+  - `git restore --staged fileName`
+
+
+
 
