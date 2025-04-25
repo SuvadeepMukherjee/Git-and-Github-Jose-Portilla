@@ -68,4 +68,30 @@ git stash takes all those changes that havent been committed yet and stashes the
 
 - The .gitignore file is a file we can create to tell Git to ignore certain files or even entire directories 
 
+#### Common Workflow patterns
+
+- Common Workflow Patterns
+  
+  - Single Branch Workflow
+  
+  - Branch Based Development
+
+- Single Branch Workflow
+  
+  - This essentially treats GIt as more of a save tool or online backup than a fully featured version control system with branching ability
+
+- Branch Based Development
+  
+  - The master/main branch is never worked on directly
+  
+  - All new development and features are worked on seperate branches and then if collaboration is needed , the branches are also pushed to the remote repository
+  
+  - The master/main branch serves as a "source of truth" and usually has procedures for merging branches back into the main branch , for example creting tests for the new features of the branch and passing historically created tests
+    
+    
+    
+    
+    
+    
+
 
