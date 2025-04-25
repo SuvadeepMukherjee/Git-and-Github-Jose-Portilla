@@ -66,6 +66,46 @@
   
   - `git restore --staged fileName`
 
+#### git reset
 
+- git reset alllows us to remove commits and reset the branch 
+
+- There are 2 main types of git reset calls
+  
+  - ``git reset #######``
+    
+    - removes commits in front of the specified hash called files unchanged 
+  
+  - `git reset ####### --hard`
+    
+    - removes commits and the changes in the files
+
+- This means when  we do git reset we wont notice a change in the files themselves we just reset the commits 
+
+- This is useful if we accidentally committed to the wrong branch (for example maybe we forgot to run git switch right after creating a new branch , accidentally committing to the original branch)
+
+- In the case where we just want to undo everything , including changes and have the branch files look like they did at a previous commit we have to add the flag `--hard`
+  
+  - For example `git reset f3h9702 --hard`
+  
+  - Technically we can try to recover a commit before GIt does its garbage collection , however we should operate under the assumption that a `--hard` reset is not recoverable 
+
+#### git revert
+
+- The git revert command will create a new commit that undoes from previous commits but keeps these commits in the branch 
+
+- A git reset goes back and removes th commits (and changes if it is --hard)
+
+- A git revert creates a new commit that matches the historical state of a previous commit 
+
+- git revert doesnt change the project history which makes it a safe operation for commits that have already been published to a shared repository 
+
+- A git revert creates a new commit that matches the historical state of a previous commit 
+
+- The git revert command is a forwad-moving undo operation that offers a safe method of undoing changes .Instead of deleting or orphaning commits in a commit history , a revert will create a new commit that ignores the changes specified 
+
+- git revert is a safer alternative to git reset in regards to losing work 
+
+- Syntax : `git revert #######` 
 
 
