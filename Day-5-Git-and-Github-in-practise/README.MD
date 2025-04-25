@@ -30,8 +30,6 @@ Or if you have a conflicting change
 
 ![](../assets/stash-09.png)
 
-
-
 ![](../assets/stash-10.png)
 
 WE can stash our changes to preserve them!
@@ -47,5 +45,27 @@ You can stash changes without a commit
 git stash takes those conflicting changes and puts them away in a box 
 
 git stash takes all those changes that havent been committed yet and stashes them away in a box .To get back these preserved changes `git stash pop` .We also have the  option to run `git stash apply`.`git stash apply` applies these changes that we stashed away but doesnt pop them out.It leaves them there se we can call `git stash apply` again or get `git stash pop` again. `git stash apply` is like a safer version of `git stash pop` 
+
+#### git remote
+
+- git remote commands lets us create view and delete connections to other repositories.Remote connections are more like bookmarks rather than direct links into other repositories 
+
+- The remote is a URL where the host repository lives such as a Github URL 
+
+- In some cases that URL is hidden(private repository) or requires permission to directly access and interact with (PAT)
+
+- We can also have multiple git remote configurations
+
+- Running just `git remote` will list the remote connections we have
+
+- Running `git remote -v` will list the remote connections along with their URL
+
+- We can add or remove remote repositories with the command
+  
+  - `git remote add <name> <url>
+  
+  - git remote rm <name>
+
+- The .gitignore file is a file we can create to tell Git to ignore certain files or even entire directories 
 
 
