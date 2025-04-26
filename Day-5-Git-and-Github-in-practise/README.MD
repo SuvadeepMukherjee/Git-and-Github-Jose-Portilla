@@ -91,6 +91,19 @@ git stash takes all those changes that havent been committed yet and stashes the
 - Code review processes will vary between organisations , but pull requests are often the foundation of the code review process
 - Github has the ability to give different levels of permissions for approving pull requests or allowing a merge
 
+#### Fork
+
+- fork => creating a copy of a repository on Github for your own Github account
+- Then we can clone that version locally , make changes , and create pull requests to merge those changes 
+- Forking only creates the copy on your Github , we then need to clone this copy to our local machine , make updates/changes and then create the pull request 
+- Any changes we push to Github would only get pushed onto our own copy of the repository
+
+#### GitHub Actions
+
+- Github Actions is a continuous integration and continuous delivery(CI/CD) platform that allows us to automate our build , test and deployment pipeline
+- We can create workflows that build and test every pull request to our repository , or deploy merged pull requests to production 
+- Github Actions are executed upon an event , and the "runners" of jobs can be stacked on top of each other 
+
 
 
 
