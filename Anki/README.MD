@@ -132,4 +132,41 @@
 
 1. Switch to master/main
 
-2. git merge new_branch
+2. git merge new_branch'
+
+------
+
+#### 04-undoing-changes
+
+#### Q1:How can we move to a particular commit ? 
+
+**Answer**: 
+
+git log --oneline
+
+git checkout ####### (First 7 digits of hash)
+
+Note => we are simply exploring the historical commit .If w start making changes here they wont be prerserved since HEAD is not pointing at a branch reference.However we could create a new branch at this point in time , reattaching HEAD to a branch again
+
+#### Q2:What does git restore do ? 
+
+**Answer**:ultimate Ctrl + z (restore files to their previous commit)
+
+#### Q3:Restore 2 files from the most recent commit ? 
+
+**Answer**: `git restore --source HEAD ~2 myFile.txt`
+
+#### Q4:How does git reset work ? 
+
+**Answr**:
+
+- `git reset #######` => removes commits in front of the specified hash , files unchanged
+- `git reset ####### --hard` => removes commits in front of the specified hash , files also changed
+
+#### Q5:git revert 
+
+**Answer**: 
+
+Forward-moving undo operation that offers a safe method of undoing changes .Instead of deleting or orphaning commits in a commit history , a revert will create a new commit that ignores the changes specified 
+
+`git revert #######`
