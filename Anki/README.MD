@@ -61,19 +61,19 @@
   
   **Answer**: 
 
-| functionality                        | git command                 |
-| ------------------------------------ | --------------------------- |
-| adding a single file                 | git add fileName            |
-| adding multiple files                | git add fileName1 fileName2 |
-| adding all files                     | git add .                   |
-| git log - detailed                   | git log                     |
-| git log - overview                   | git log --oneline           |
-| Get the remote branch                | git remote -v               |
-| add a new remote branch called orgin | git remote add origin url   |
-| rename a remote branch               | git remote rename old new   |
-| remove a remote branch               | git remote remove origin    |
-| pushing to a remote branch           | git push -u origin main     |
-| renaming a branch                    | gt branch -M main           |
+| functionality                        | git command                                              |
+| ------------------------------------ | -------------------------------------------------------- |
+| adding a single file                 | git add fileName                                         |
+| adding multiple files                | git add fileName1 fileName2                              |
+| adding all files                     | git add .                                                |
+| git log - detailed                   | git log                                                  |
+| git log - overview                   | git log --oneline                                        |
+| Get the remote branch                | git remote -v                                            |
+| add a new remote branch called orgin | git remote add origin url                                |
+| rename a remote branch               | git remote rename old new                                |
+| remove a remote branch               | git remote remove origin                                 |
+| pushing to a remote branch           | git push -u origin main                                  |
+| renaming a branch                    | First switch to that branch <br/><br/>git branch -M main |
 
 #### Q2:What does git fetch and git pull do ?
 
