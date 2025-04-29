@@ -120,8 +120,6 @@
 
 2. git branch -m new_name
 
-
-
 #### Q3:Deleting a branch
 
 **Answer**:To delete a branch `git branch -d branch_to_delete_name`
@@ -138,7 +136,7 @@
 
 #### 04-undoing-changes
 
-#### Q1:How can we move to a particular commit ? 
+#### Q1:How can we move to a particular commit ?
 
 **Answer**: 
 
@@ -148,25 +146,39 @@ git checkout ####### (First 7 digits of hash)
 
 Note => we are simply exploring the historical commit .If w start making changes here they wont be prerserved since HEAD is not pointing at a branch reference.However we could create a new branch at this point in time , reattaching HEAD to a branch again
 
-#### Q2:What does git restore do ? 
+#### Q2:What does git restore do ?
 
 **Answer**:ultimate Ctrl + z (restore files to their previous commit)
 
-#### Q3:Restore 2 files from the most recent commit ? 
+#### Q3:Restore 2 files from the most recent commit ?
 
 **Answer**: `git restore --source HEAD ~2 myFile.txt`
 
-#### Q4:How does git reset work ? 
+#### Q4:How does git reset work ?
 
 **Answr**:
 
 - `git reset #######` => removes commits in front of the specified hash , files unchanged
 - `git reset ####### --hard` => removes commits in front of the specified hash , files also changed
 
-#### Q5:git revert 
+#### Q5:git revert
 
 **Answer**: 
 
 Forward-moving undo operation that offers a safe method of undoing changes .Instead of deleting or orphaning commits in a commit history , a revert will create a new commit that ignores the changes specified 
 
 `git revert #######`
+
+---
+
+## 05-Git-and-Github-in-practise
+
+#### Q1:Discuss the following commands `git stash`, `git stash pop` and `git stash apply`
+
+**Answer**:
+
+| git commanad    | functionality                                                                                                                                 |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| git stash       | Temporarily shelves (or stashes) , we have made to our working copy so we can work on something else and then come back and re-apply later on |
+| git stash pop   | get back those preserved changes                                                                                                              |
+| git stash apply | applies the saved changes but doesnt pop them out                                                                                             |
