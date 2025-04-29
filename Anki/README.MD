@@ -171,7 +171,7 @@ Forward-moving undo operation that offers a safe method of undoing changes .Inst
 
 ---
 
-## 05-Git-and-Github-in-practise
+## 06-Git-and-Github-in-practise
 
 #### Q1:Discuss the following commands `git stash`, `git stash pop` and `git stash apply`
 
