@@ -92,7 +92,7 @@
 
 ---
 
-## 03-Working-with-others
+## 04-Working-with-others
 
 #### Q1:Write the git commands for the following
 
@@ -134,7 +134,7 @@
 
 ------
 
-#### 04-undoing-changes
+## 05-undoing-changes
 
 #### Q1:How can we move to a particular commit ?
 
