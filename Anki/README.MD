@@ -150,7 +150,7 @@ Note => we are simply exploring the historical commit .If w start making changes
 
 **Answer**:ultimate Ctrl + z (restore files to their previous commit)
 
-#### Q3:Restore 2 files from the most recent commit ?
+#### Q3:Restore 2 commits back  from the most recent commit in the file myFile.txt?
 
 **Answer**: `git restore --source HEAD ~2 myFile.txt`
 
